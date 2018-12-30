@@ -50,12 +50,7 @@ public class MainActivitySpinner extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                /*if(r1.isChecked()){
-                    gn = "Male";
-                }
-                else if (r2.isChecked()){
-                    gn = "Female";
-                }*/
+
                 radioButton = findViewById(checkedId);
                 gn = radioButton.getText().toString();
                 Toast.makeText(MainActivitySpinner.this, gn, Toast.LENGTH_SHORT).show();
